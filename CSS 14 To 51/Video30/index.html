@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables In Css</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        :root{
+            --pricolor: blue;
+            --seccolor: red;
+        }
+
+        ul{
+            display: flex;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+
+        li{
+            padding: 5px;
+            margin: 5px;
+            list-style: none;
+        }
+
+        p{
+            background-color: var(--pricolor);
+        }
+        
+        div{
+            background-color: var(--seccolor);
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>
+        variables in css are used to control all elements by defining just one variable
+        and connecting it to all other elements
+    </p>
+    
+    <div>
+        <ul>
+            <li>home</li>
+            <li>contacts</li>
+            <li>login</li>
+        </ul>
+    </div>
+    
+    <div>
+        <ul>
+            <li>home</li>
+            <li>contacts</li>
+            <li>login</li>
+        </ul>
+    </div>
+        
+
+
+</body>
+</html>

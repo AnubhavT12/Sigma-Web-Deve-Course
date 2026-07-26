@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar Using Css flexbox</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        body{
+            background-color: cornsilk;
+        }
+
+        .container{
+            background-color: aqua;
+            height:30px ;
+        }
+
+        nav{
+            background-color: rgb(237, 224, 210);
+            display: flex;
+            border: black;
+            padding: 10px;
+            margin: ;
+            gap: 30px;
+            justify-content: flex-end;
+            justify-items: left;
+        }
+
+        div{
+            background-color: beige;
+        }
+
+        nav :first-child{
+            color: rgb(0, 0, 0);
+            text-decoration: solid;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        .box1{
+            display: flex;
+            background-color: chartreuse;
+            justify-self: center;
+            font-size: 30px;
+            padding: 20px;
+            margin: 40px;
+        }
+
+        .box2{
+            justify-self: center;
+            text-align: center;
+            padding: 20px;
+            margin: 30px;
+            font-size: 20px;
+
+        }
+
+        .button1{
+            background-color: aqua;
+            justify-self: center;
+            border: 3px solid blue;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 5px;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="Container">
+            <nav>
+                <div class="mcon">Ultra Edit</div>
+                <div>Products</div>
+                <div>Pricing</div>
+                <div>Resources</div>
+                <div>About Us</div>
+                <div>A/Z</div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="box1">Download &nbsp; <h5>UltraEdit</h5> &nbsp;  For Windows</div>
+        
+        <div class="box2">download and try UltraEdit Before You Buy It.
+            This downlaod Includes the full Video Editior</div>
+            
+            <div class="button1">download mac or Linux version</div>
+
+
+    </main>
+    
+    <footer>
+        Thank You For Downlaoding UltraEdit
+
+    </footer>
+</body>
+</html>

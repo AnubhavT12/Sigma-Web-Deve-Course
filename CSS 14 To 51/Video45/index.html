@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition in css</title>
+    <style>
+        .container{
+            background-color: blue;
+            height: 60vh;
+            width: 60vw;
+        }
+
+        .box{
+            background-color: aqua;
+            height: 50px;
+            width: 50px;
+            /* transition-property: transform ;
+            transition-delay: 1s;
+            transition-duration: 2s;
+            transition-timing-function: ; */
+            transition-property: transform;
+            transition: all 1s ease-in-out 2s;
+        }
+
+        .translate{
+            transform: translateX(40px) translateY(30px);
+            background-color: rgb(29, 208, 115);
+        }
+
+    </style>
+</head>
+<body>
+    transition are used for make an element move from one state to another smoothly
+     <div class="container">
+        <div class="box translate"></div>
+     </div>
+</body>
+</html>

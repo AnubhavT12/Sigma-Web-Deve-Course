@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid IN CSS</title>
+    <style>
+
+        .container{
+            background-color: aquamarine;
+            border: 2px solid black;
+            height: 300px;
+            width: 500px;
+            display: grid;
+            
+            grid-template-columns: [first]150px [sec]100px [third]50px;
+             grid-template-rows: 100px 100px 100px;
+
+            grid-template-areas: "nav anv nav"
+                                 "emp content side"
+                                 "footer footer footer";
+
+        }
+
+        .item{
+            background-color: aqua;
+            border: 2px solid red;
+            height: 20px;
+            width: 20px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .item1{
+            grid-area: nav;
+        }
+
+        .item2{
+            grid-area: emp;
+        }
+
+        .item3{
+            grid-area: content;
+        }
+
+        .item9{
+            grid-area: footer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+    
+</body>
+</html>

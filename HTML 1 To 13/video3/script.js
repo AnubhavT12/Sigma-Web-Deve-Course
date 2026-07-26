@@ -1,0 +1,1 @@
+alert("THE WEBSITE IS ON")

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout Using HTML and CSS</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            background-color: pink;
+            height: 50px;
+        }
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            padding:0;
+            margin:0;
+            background-color: rgb(230, 84, 232);
+        }
+
+        li{
+            background-color: rgb(205, 58, 213);
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 15px;
+        }
+
+        div{
+            border: 2px solid;
+        }
+
+        .Mainbox{
+            height: 200vw;
+            width: 800vw;
+            background-color: rgb(12, 250, 103);
+            color: rgb(255, 162, 0);
+            margin: 12px 34px;;
+            padding: 10px;
+        }
+
+        .Dbox{
+            display: inline-flex;
+            height: 350px;
+            width: 350px;
+        }
+
+        .d1{
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .d2{
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .MCbox{
+            height: 100px;
+            width:700px;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<header>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contacts Us</li>
+            <li>More Details</li>
+        </ul>
+    </nav>
+    
+</header>
+
+<main>
+
+    <div class="Mainbox">
+        <div class="Dbox D1">box 1</div>
+        <div class="Dbox D2">box 2</div>
+    </div>
+    
+    <div class="MCbox">welcome to sigma web development course</div>
+    
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>

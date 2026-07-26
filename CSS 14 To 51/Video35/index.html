@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Info on Selectors in html and css</title>
+    <style>
+        
+        .mbox :first-child{
+            color: aqua;
+            background-color: black;
+        }
+
+        .mbox :nth-child(3){
+            background-color: blueviolet;
+
+        }
+
+        .mbox :nth-last-child{
+            font-size: 10px;
+        }
+
+        .box{
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        p, span, a{
+            color: greenyellow;
+            background-color: rgb(230, 31, 31);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="mbox">
+        <div class="box">this is div 1</div>
+        <div class="box">this is div 2</div>
+        <div class="box">this is div 3</div>
+        <p>this is a p tag content</p>
+        <span>this is span tag content</span>
+        <br>
+        <br>
+        <a href="youtube">AnchorLINK</a>
+    </div>
+    
+</body>
+</html>

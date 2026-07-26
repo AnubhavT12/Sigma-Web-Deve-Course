@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries In CSS</title>
+    <style>
+        @media only screen and (max-width: 350px)
+        {
+            
+            body{
+                background-color: black;
+                }
+
+            .maindiv{
+                     flex-direction: column
+                }
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid red;
+            display: flex;
+            background-color: aquamarine;
+            border-radius: 25px;
+            width: 344px;
+            height: 244px;
+            flex-direction: column;
+        }
+
+        .maindiv{
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid cyan;
+            background-color: chartreuse;
+            display: flex;
+           ;
+        }
+
+    </style>
+
+</head>
+<body>
+    <pre>the media queries in css helps to make responsive websites 
+        means it changes the website according to media rules and in which type
+        of device it is viewed
+
+        it can be coded thru 
+        @media only screen and(condition)
+        what should be changed{}
+    
+    </pre>
+    <div class="maindiv">
+        <div class="box">this is box 1</div>
+        <div class="box">this is box 2</div>
+        <div class="box">this is box 3</div>
+    </div>
+    
+</body>
+</html>

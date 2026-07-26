@@ -1,0 +1,27 @@
+.c1{
+    background-color: rgb(255, 0, 0);
+}
+
+.c2{
+    background-color: rgb(252, 130, 130);
+}
+
+.c3{
+    background-color: rgb(250, 189, 189);
+}
+
+#p1{
+    color: rgb(9, 255, 0);
+}
+
+#p2{
+    color: rgb(0, 255, 42);
+}
+
+#p3{
+    color: chartreuse;
+}
+
+#firstdiv{
+    color: darkred;
+}

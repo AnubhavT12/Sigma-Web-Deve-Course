@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            padding: 5px;
+            width: 60px;
+            height: 40px;
+            margin: 5px;
+            border: 2px solid black;
+                }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="cont border">
+
+        <div class="box anim red pic" style="display: flex;" id="box1" data-createdby="anub">BOX-1</div>
+        <div class="box anim red pic" id="box2">BOX-2</div>
+        <div class="box anim red pic" id="box3">BOX-3</div>
+    
+    </div>
+
+    <script>
+
+        // to add an element like div or span etc
+
+        let  div = document.createElement("div");
+        div.innerHTML = "this is the inserted div <b>by anub</b>"
+        div.setAttribute("class", "created");
+        document.querySelector(".container").append(div)    //you can change append(adds at last) to before after prepend(at begin) and replacewith for desired type of addition
+
+        // to add 
+    </script>
+    
+</body>
+</html>

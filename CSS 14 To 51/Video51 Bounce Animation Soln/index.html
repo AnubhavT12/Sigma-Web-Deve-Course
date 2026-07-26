@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce ANimation solution self</title>
+    <style>
+        .cont{
+            background-color: aquamarine;
+            height: 1000px;
+            width: 1000px;
+            border: black solid 3px;
+            position: relative;
+        }
+
+        .ball{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            border: black solid 2px;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: animx 3s linear 50ms infinite , animy 1s ease-out 50ms infinite alternate;
+            
+        }
+
+        @keyframes animx {
+
+            from{
+                left: 0;
+            }
+
+            to{
+                left: 100%;
+                
+            }
+            
+        }
+
+        @keyframes animy {
+
+            from{
+                bottom: 0;
+
+            }
+
+            to{
+                bottom: 100%;
+                
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>

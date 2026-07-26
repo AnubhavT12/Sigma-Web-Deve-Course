@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Bubbling</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            margin: 14px;
+            padding: 14px;
+            background-color: chartreuse;
+        }
+
+        .childcont{
+            border: 2px solid black;
+            margin: 14px;
+            padding: 14px;
+            background-color: rgb(228, 71, 71);
+
+        }
+
+        .child{
+            border: 2px solid black;
+            margin: 14px;
+            padding: 14px;
+            background-color: rgb(71, 77, 66);
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <section class="childcont">
+            <div class="child">this is a child</div>
+        </section>
+    </div>
+
+<script>
+
+document.querySelector(".child").addEventListener("click" , (e)=>{
+    e.stopPropagation()                 //clicking child now will not propgate the               
+    alert("child Was Clicked")          //event into parent containers
+})
+
+document.querySelector(".childcont").addEventListener("click" , ()=>{
+    alert("child container Was Clicked")        //since no event changing done click event will propgate to foreign cont
+})
+
+document.querySelector(".container").addEventListener("click" , ()=>{
+    alert("container Was Clicked")
+})
+
+setInterval(() => {
+    document.querySelector(".child").style.backgroundColor = "red"
+}, 2000);
+
+setTimeout(() => {
+    document.querySelector(".container").style.backgroundColor = "green"
+}, 3000);
+
+</script>
+
+</body>
+
+</html>

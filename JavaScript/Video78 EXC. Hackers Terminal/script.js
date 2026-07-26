@@ -1,0 +1,3 @@
+setInterval(() => {
+    alert("S")
+}, interval);

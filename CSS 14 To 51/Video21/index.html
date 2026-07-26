@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+
+    h1{color: green;}
+    .yellow{color: yellow;}
+    .cred{color: red;}
+    .cblue{color: blue;}
+
+    </style>
+</head>
+
+<body>
+
+    <h1 class="yellow cred cblue">this is h1 content</h1>
+    
+    <pre>
+        the universal selctor * has least specificity value of 0
+        the element selector like h1 p pre div has value of 1
+        then the class selctor has specificty value of 10
+        then there is id selector with value of 100
+        and inline styles have value of 1,000
+        the important value has most specificity of 10,000
+
+        position and appearance of the style types determine which style would be applied in website
+        
+        specificity decides what is to be done if there are overriding styles in css file
+
+        
+
+    
+    </pre>
+
+
+</body>
+
+</html>
