@@ -1,0 +1,1 @@
+- we can use react which means that once we update the variable, it changes across the page
