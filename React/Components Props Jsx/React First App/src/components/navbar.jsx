@@ -1,10 +1,9 @@
 import React from 'react'
-import footer from './footer'
+import "./components/navbar.css"
 
-const navbar = (props) => {
+const navbar = () => {
   return (
     <div>
-      <div className="logo">{props.logotext}</div>
       <nav>
         <ul>
             <li>home</li>
@@ -12,7 +11,6 @@ const navbar = (props) => {
             <li>contact us</li>
         </ul>
       </nav>
-      <footer/>
     </div>
   )
 }

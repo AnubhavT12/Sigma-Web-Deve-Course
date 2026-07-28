@@ -1,0 +1,12 @@
+body{
+    background-color: red;
+}
+
+nav, ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
