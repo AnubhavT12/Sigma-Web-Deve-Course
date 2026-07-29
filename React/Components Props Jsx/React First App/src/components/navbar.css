@@ -4,9 +4,18 @@ body{
 
 nav, ul{
     display: flex;
+    color: black;
 }
 
 li{
     list-style-type: none;
+    list-style-type: circle;
 }
 
+ul{
+    gap: 24px;
+}
+
+nav{
+    background-color: blanchedalmond;
+}
