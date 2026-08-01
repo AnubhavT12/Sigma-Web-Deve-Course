@@ -11,10 +11,10 @@ function App() {
 
 
   useEffect(() => {
-    console.log(`first rendering`)
-    btnRef.current.style.backgroundColor = "red"
-  },[])
-    
+    a.current = a.current + 1
+    console.log(`rendering... | a = ${a.current}`)  //value of a does not reset/reinitialize bcos of code re rednering when counter is clicked
+  },)
+    //across re-rendering. the value persists.  
 
   return (
     <>
@@ -31,15 +31,12 @@ function App() {
           </p>
         </div>
         <button
-          ref = {btnRef}
           type="button"
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
         </button>
-
-        <button onClick={()=>{btnRef.current.style.display="none"}}>Change Me</button>
       </section>
 
       <div className="ticks"></div>
