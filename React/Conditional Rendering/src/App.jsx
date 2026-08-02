@@ -1,16 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import heroImg from "./assets/hero.png";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [showBtn, setShowBtn] = useState(false)
-  
-  const Todo = () => { return (<>
+  const [count, setCount] = useState(0);
+  const [showBtn, setShowBtn] = useState(false);
+  const [todos, settodos] = useState([
+    {
+      title: "Hey",
+      desc: "i am a grocery todo",
+    },
+    {
+      title: "Hello",
+      desc: "i am a medicals todo",
+    },
+    {
+      title: "Yo",
+      desc: "i am a workout todo",
+    },
+  ]);
 
-    <div className='todo'>i am a todo</div> </>)}  //we made a reusable todo component
+  // const Todo = ({ todo }) => {
+  //   return (
+  //     <>
+  //       <div /*some tailwind styling*/ >
+  //         <div className="todo">{todo.title}</div>
+  //         <div className="todo">{todo.desc}</div>
+  //       </div>
+  //     </>
+  //   );
+  // }; //we made a reusable todo component
 
   return (
     <>
@@ -35,15 +56,33 @@ function App() {
         </button>
 
         {/* {showBtn?<button>i will only when 2nd button is clicked</button> : ""} */}
-        {showBtn ? <button>ShowBtn Is true</button> : <button>ShowBtn Is False</button>}
-      
+        {showBtn ? (
+          <button>ShowBtn Is true</button>
+        ) : (
+          <button>ShowBtn Is False</button>
+        )}
+
         {/* {showBtn && <button>i will only when 2nd button is clicked</button>} */}
         {/* {showBtn && <button>ShowBtn Is True</button>} */}
-      
+
         {/* <button onClick={()=>setShowBtn(!showBtn)}></button> */}
 
-        <Todo></Todo>
+        {/* to render a list in react js we use a special method */}
+        {/* when we render lists using map we have to give unique keys */}
 
+        {todos.map((todo) => {
+          // return <Todo key={todo.title} todo={todo} />;
+
+          /*do not press enter after return or it will return blank or else add parenthesis in same line if want to press enter */
+          /*we have to compulsorily add a unique key in lists rendering*/
+
+          return (
+            <div key={todo.title}/*some tailwind styling*/>
+              <div className="todo">{todo.title}</div>
+              <div className="todo">{todo.desc}</div>
+            </div>
+          );
+        })}
       </section>
 
       <div className="ticks"></div>
@@ -132,7 +171,7 @@ function App() {
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
