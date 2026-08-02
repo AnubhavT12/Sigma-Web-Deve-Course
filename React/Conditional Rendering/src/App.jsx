@@ -7,6 +7,10 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const [showBtn, setShowBtn] = useState(false)
+  
+  const Todo = () => { return (<>
+
+    <div className='todo'>i am a todo</div> </>)}  //we made a reusable todo component
 
   return (
     <>
@@ -37,6 +41,8 @@ function App() {
         {/* {showBtn && <button>ShowBtn Is True</button>} */}
       
         {/* <button onClick={()=>setShowBtn(!showBtn)}></button> */}
+
+        <Todo></Todo>
 
       </section>
 
